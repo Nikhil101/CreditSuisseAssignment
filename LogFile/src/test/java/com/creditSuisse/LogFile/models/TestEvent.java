@@ -19,7 +19,7 @@ public class TestEvent {
 	public void testEventEntity() {
 		Event entry = new Event("id", 1L, "APPLICATION_LOG", "12345", true);
 		assertNotNull(entry.getEventId());
-		assertNotNull(entry.getTimestamp());
+		assertNotNull(entry.getTimestampDifference());
 		assertNotNull(entry.getHost());
 		assertNotNull(entry.getType());
 		assertTrue(entry.isLongEventFlag());
@@ -28,10 +28,10 @@ public class TestEvent {
 		entry1.setEventId("id2");
 		entry1.setHost("12346");
 		entry1.setLongEventFlag(true);
-		entry1.setTimestamp(2L);
+		entry1.setTimestampDifference(2L);
 		entry1.setType("APPLICATION_LOG");
 		assertEquals("id2", entry1.getEventId());
-		assertEquals(2L, entry1.getTimestamp());
+		assertEquals(2L, entry1.getTimestampDifference());
 		assertEquals("APPLICATION_LOG", entry1.getType());
 		assertEquals("12346", entry1.getHost());
 		assertEquals(true, entry1.isLongEventFlag());

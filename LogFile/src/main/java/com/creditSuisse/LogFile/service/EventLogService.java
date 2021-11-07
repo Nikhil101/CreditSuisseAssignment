@@ -78,7 +78,7 @@ public class EventLogService {
 					eventEntity.setHost(streamObj.getHost());
 					eventEntity.setType(streamObj.getType());
 					eventEntity.setLongEventFlag(flag);
-					eventEntity.setTimestamp(timeDifference);
+					eventEntity.setTimestampDifference(timeDifference);
 					log.info("Saving the record into database");
 					// Saving the record in database
 					if(eventRepository.save(eventEntity)!=null) log.info("Event saved into the database - "+eventEntity.getEventId());

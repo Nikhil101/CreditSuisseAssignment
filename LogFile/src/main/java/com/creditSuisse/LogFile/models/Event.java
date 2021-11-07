@@ -18,7 +18,7 @@ public class Event {
 
 	@Id
 	private String eventId;
-	  private long timestamp;
+	  private long timestampDifference;
 	  private String type;
 	  private String host;
 	  private boolean longEventFlag;

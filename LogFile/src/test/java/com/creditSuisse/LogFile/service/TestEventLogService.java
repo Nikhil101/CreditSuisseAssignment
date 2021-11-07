@@ -34,7 +34,7 @@ public class TestEventLogService {
 		eventEntity.setHost("12345");
 		eventEntity.setType("APPLICATION_LOG");
 		eventEntity.setLongEventFlag(true);
-		eventEntity.setTimestamp(5);
+		eventEntity.setTimestampDifference(5);
 		Mockito.when(eventRepositoryMock.save(eventEntity)).thenReturn(eventEntity);
 		eventLogService.parseAndStoreEvents(absolutePathFile);
 	}
