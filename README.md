@@ -60,12 +60,9 @@ Below are the steps you need to perform once the project is cloned to your syste
 ```
 example - cd <project-directory>
 ```
-- Step 2: Run below commands in command prompt
+- Step 2: Run below command in command prompt
 ```
 mvn clean install
-```
-```
-mvn clean package
 ```
 - Step 3: Now execute jar with below command
 ```
