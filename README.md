@@ -65,6 +65,7 @@ example - cd <project-directory>
 mvn clean install
 ```
 - Step 3: Now execute jar with below command
+Example -
 ```
 java -jar LogFile-0.0.1-SNAPSHOT.jar E:\input.txt
 ```
