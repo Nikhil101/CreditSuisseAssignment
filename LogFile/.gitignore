@@ -6,8 +6,7 @@
 Thumbs.db
 metastore_db/
 logs/
-
-
+.db
 
 ########################
 ## Java
